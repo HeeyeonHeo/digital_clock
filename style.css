@@ -1,0 +1,84 @@
+/* style.css */
+
+@font-face {
+  font-family: "ds-digital";
+  src: url("./font/DS-DIGIB.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "ds-digital";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdd1b6;
+  background-image: url("./img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clock-box {
+  font-size: 125px;
+  color: #2E294E;
+  margin-top: 15%;
+}
+
+.terminal-window {
+  text-align: center;
+  width: 37.5rem;
+  height: 22.5rem;
+  border-radius: 0.625rem;
+  position: relative;
+  display: flex;
+}
+
+.terminal-window header {
+  background: #9055A2;
+  width: 10rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding-left: 0.625rem;
+}
+
+.terminal-window header .button {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0.625rem 0.25rem 0 0;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.terminal-window header .button.green {
+  background: #3bb662;
+}
+
+.terminal-window header .button.yellow {
+  background: #e5c30f;
+}
+
+.terminal-window header .button.red {
+  background: #e75448;
+}
+
+.terminal-window section.terminal {
+  border: 10px solid #9055A2;
+  border-radius: 0.5rem;
+  /* font-size: 11pt; */
+  background: #D499B9;
+  padding: 0.625rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 1.875rem;
+  bottom: 0;
+  overflow: hidden;
+}
