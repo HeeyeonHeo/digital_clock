@@ -1,23 +1,28 @@
 /* style.css */
 
 @font-face {
-  font-family: "ds-digital";
-  src: url("./font/DS-DIGIB.TTF");
+  font-family: "dalmoori";
+  src: url("./font/dalmoori.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
 html,
 body {
+  margin: 0;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 body {
-  font-family: "ds-digital";
+  font-family: "dalmoori";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +30,14 @@ body {
   background-image: url("./img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
-.clock-box {
-  font-size: 125px;
-  color: #2E294E;
-  margin-top: 15%;
+.container {
+  color: #fff;
+  overflow: hidden;
+  filter: blur(4px);
+  position: absolute;
 }
 
 .terminal-window {
@@ -43,7 +50,7 @@ body {
 }
 
 .terminal-window header {
-  background: #9055A2;
+  background: #9055a2;
   width: 10rem;
   border-radius: 0.5rem 0.5rem 0 0;
   padding-left: 0.625rem;
@@ -70,10 +77,10 @@ body {
 }
 
 .terminal-window section.terminal {
-  border: 10px solid #9055A2;
+  border: 10px solid #9055a2;
   border-radius: 0.5rem;
   /* font-size: 11pt; */
-  background: #D499B9;
+  background: #d499b9;
   padding: 0.625rem;
   box-sizing: border-box;
   position: absolute;
@@ -81,4 +88,23 @@ body {
   top: 1.875rem;
   bottom: 0;
   overflow: hidden;
+}
+
+.clock-box {
+  font-size: 80px;
+  color: #011638;
+  margin-top: 15%;
+  position: relative;
+}
+
+.date-box {
+  font-size: 30px;
+  color: #2e294e;
+  margin-top: 5%;
+}
+
+canvas#canvas {
+  width: 100%;
+  /* display: block; */
+  position: relative;
 }

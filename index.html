@@ -7,24 +7,36 @@
     <title>digital Clock</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
   </head>
   <body>
+    <div class="container">
+      <canvas id="canvas">Canvas not supported.</canvas>
+    </div>
     <div class="terminal-window">
       <header>
         <div class="button green"></div>
         <div class="button yellow"></div>
         <div class="button red"></div>
       </header>
+
       <section class="terminal">
         <div id="clock">
           <div class="clock-box">
+            <span id="ampm">00</span>
             <span id="hours">00</span>: <span id="min">00</span>:
             <span id="sec">00</span>
           </div>
         </div>
+        <div id="date">
+          <div class="date-box">
+            <span id="year">00</span>년 <span id="month">00</span>월
+            <span id="date1">00</span>일
+            <span id="day">00</span>
+          </div>
+        </div>
       </section>
     </div>
-
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
